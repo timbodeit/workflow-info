@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: GCC Version
         run: gcc --version
+      - name: Installed Rust Toolchains
+        run: rustup show
+      - name: Installed packages
+        run: dpkg --list
