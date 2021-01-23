@@ -1,0 +1,13 @@
+name: Dump Info
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GCC Version
+        run: gcc --version
